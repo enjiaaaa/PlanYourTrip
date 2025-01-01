@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Your Expenses</title>
+    <link rel="stylesheet" href="../css/style-finance.css">
+</head>
+
+<body>
+    <header>
+        <h1>Record Your Expenses</h1>
+        <p>Simply track your expenses selecting the respective categories and key in amount!</p>
+    </header>
+
+    <body>
+        <div class="finance-tracker">
+            <!-- Cat 1 = Food-->
+            <div class="categories" id="food">
+                <h2> FOOD </h2>
+                <div class="inputs">
+                    <input type="text" id="desc1" placeholder="Enter descriptions...">
+                    <input type="number" id="amt1" placeholder="Enter amount...">
+                    <button class="save-btn" onclick="saveEntry('food')">Save</button>
+                    <button class="cancel-btn" onclick="cancelEnty('food')">Cancel</button>
+                </div>
+                <ul class="entry-list" id=" list1"></ul>
+                <button class="see-more-btn" onclick="seeMore('food')">See More</button>
+            </div>
+
+            <!-- Cat 2 = Transport-->
+            <div class="categories" id="transport">
+                <h2> TRANSPORT </h2>
+                <div class="inputs">
+                    <input type="text" id="desc2" placeholder="Enter descriptions...">
+                    <input type="number" id="amt2" placeholder="Enter amount...">
+                    <button class="save-btn" onclick="saveEntry('transport')">Save</button>
+                    <button class="cancel-btn" onclick="cancelEnty('transport')">Cancel</button>
+                </div>
+                <ul class="entry-list" id=" list2"></ul>
+                <button class="see-more-btn" onclick="seeMore('transport')">See More</button>
+            </div>
+
+            <!-- Cat 3 = Shopping-->
+            <div class="categories" id="shopping">
+                <h2> SHOPPING </h2>
+                <div class="inputs">
+                    <input type="text" id="desc3" placeholder="Enter descriptions...">
+                    <input type="number" id="amt3" placeholder="Enter amount...">
+                    <button class="save-btn" onclick="saveEntry('shopping')">Save</button>
+                    <button class="cancel-btn" onclick="cancelEnty('shopping')">Cancel</button>
+                </div>
+                <ul class="entry-list" id=" list3"></ul>
+                <button class="see-more-btn" onclick="seeMore('shopping')">See More</button>
+            </div>
+
+            <!-- Cat 4 = Miscellaneous-->
+            <div class="categories" id="miscellaneous">
+                <h2> MISCELLANEOUS </h2>
+                <div class="inputs">
+                    <input type="text" id="desc4" placeholder="Enter descriptions...">
+                    <input type="number" id="amt4" placeholder="Enter amount...">
+                    <button class="save-btn" onclick="saveEntry('miscellaneous')">Save</button>
+                    <button class="cancel-btn" onclick="cancelEnty('miscellaneous')">Cancel</button>
+                </div>
+                <ul class="entry-list" id="list4"></ul>
+                <button class="see-more-btn" onclick="seeMore('miscellaneous')">See More</button>
+            </div>
+
+            <!-- Cat 5 = Others-->
+            <div class="categories" id="others">
+                <h2> OTHERS </h2>
+                <div class="inputs">
+                    <input type="text" id="desc5" placeholder="Enter descriptions...">
+                    <input type="number" id="amt5" placeholder="Enter amount...">
+                    <button class="save-btn" onclick="saveEntry('others')">Save</button>
+                    <button class="cancel-btn" onclick="cancelEnty('others')">Cancel</button>
+                </div>
+                <ul class="entry-list" id="list5"></ul>
+                <button class="see-more-btn" onclick="seeMore('others')">See More</button>
+            </div>
+
+        </div>
+
+    </body>
+
+    <main>
+
+    </main>
+
+    <script src="../javascript/finance.js"></script>
+
+    <footer>
+        <p>© 2024 Travel Planner. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

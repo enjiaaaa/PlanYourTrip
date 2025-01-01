@@ -1,5 +1,7 @@
-h1 {
-    background: #5dc1eb;
+h1,
+footer {
+    background: #000000;
+    color: white;
     padding: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -8,17 +10,78 @@ h1 {
 
 p {
     text-align: center;
-    font-size: 18px;
-    font: Georgia;
+    font-size: larger;
 }
+
+footer {
+    z-index: 2;
+    margin-top: 5%;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
 
 #calendar {
     max-width: 900px;
     height: 700px;
-    /* Ensure height is defined */
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
+    border: 1px solid #919090;
+    background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the model popup */
+#popupModel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+    /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#popupModel input,
+#popupModel button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#popupModel .model-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#popupModel #cancelButton {
+    background-color: #f44336;
+    color: white;
+}
+
+
+#popupModel #submitDescriptionBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    /* Hidden by default */
 }

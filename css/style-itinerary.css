@@ -1,0 +1,24 @@
+h1 {
+    background: #5dc1eb;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    font: Georgia;
+}
+
+#calendar {
+    max-width: 900px;
+    height: 700px;
+    /* Ensure height is defined */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

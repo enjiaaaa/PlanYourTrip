@@ -1,4 +1,4 @@
-# 📍 Plan Your Trip 🛫🧳🌇
+![Screenshot 2025-01-02 at 4 04 11 PM](https://github.com/user-attachments/assets/58cdaa10-01b6-4a50-a77e-c0d023aef7b7)# 📍 Plan Your Trip 🛫🧳🌇
 One-stop portal to keep track of your daily schedule and expenses when travelling!
 
 ## Features
@@ -7,6 +7,5 @@ One-stop portal to keep track of your daily schedule and expenses when travellin
 
 ## Usage Instructions
 1. Clone the repo by 
-![Screenshot 2025-01-02 at 4 04 00 PM](https://github.com/user-attachments/assets/67615bea-4c48-4356-8749-40fa9207e5f2)
-![Screenshot 2025-01-02 at 4 04 11 PM](https://github.com/user-attachments/assets/cdc0edb8-2406-4f49-b883-e03a09d588f2)
-
+``` git clone https://github.com/enjiaaaa/PlanYourTrip
+cd PlanYourTrip ```

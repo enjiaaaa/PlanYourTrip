@@ -76,13 +76,23 @@ h2 {
     background-color: #45a049;
 }
 
-.cancel-btn {
-    background-color: #f44336;
+.delete-btn {
+    background-color: red;
     color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-.cancel-btn:hover {
-    background-color: #e53935;
+.delete-btn:hover {
+    background-color: darkred;
+    /* Slightly darker red on hover */
 }
 
 .entry-list {

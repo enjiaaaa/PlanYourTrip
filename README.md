@@ -19,7 +19,7 @@ One-stop portal to keep track of your daily schedule and expenses when travellin
 
 ## Usage
 ### Navigate to either `Plan Your Itinerary` or `Track Your Expenses` page
-### For `Plan Your Itinerary` 
+### `Plan Your Itinerary` 
 * Simply click and drag across the dates in `month` page / time slots in `day` page
 * Key in `Description`
 * Select a `Colour`
@@ -28,11 +28,11 @@ One-stop portal to keep track of your daily schedule and expenses when travellin
 * To delete an event, click the event. Click `Delete Event`
 * Time slots can be changed by adjusting the `Resize Grabber` found at the bottom of the event block
 
-### For `Track Your Expenses` :
+### `Track Your Expenses` :
 * Key in `Date` `Descriptions` `$ amount` to enter an entry
   * Categories included are `FOOD` `TRANSPORT` `SHOPPING` `MISCELLANEOUS` `OTHERS`
 * List will show the most recent 3 entries (Most recent at the top of the list)
-* Click `SEE MORE` to view all entries
+* Click `See More` to view all entries
 * To delete an entry, click `Red Cross Button`
 * `TOTAL` expenses for respective categories and `OVERALL SPENDING` are displayed
 

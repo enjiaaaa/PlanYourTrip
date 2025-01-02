@@ -4,7 +4,7 @@ $(document).ready(function () {
     var eventCounter = 0;
     var selectedEvent = null;
 
-    // variables
+    // initialise variables
     var overlay = $('<div id="overlay"></div>').appendTo('body');
     var popupModel = $('<div id="popupModel">\
             <div class="model-header">Enter Event Details</div>\
@@ -16,16 +16,17 @@ $(document).ready(function () {
             <div id="errorMessage" style="color: red; display: none;">Please enter a description for the event.</div>\
         </div>').appendTo('body');
 
+    // to hide these 2 initially, only show when adding events
     overlay.hide();
     popupModel.hide();
 
-    // Load events from Local Storage
+    // to load events from local storage
     function loadEventsFromLocalStorage() {
         const events = localStorage.getItem('calendarEvents');
         return events ? JSON.parse(events) : [];
     }
 
-    // Save events to Local Storage
+    // to save events to local storage
     function saveEventsToLocalStorage() {
         const currentEvents = $('#calendar').fullCalendar('clientEvents').map(event => ({
             id: event._id,
@@ -38,6 +39,7 @@ $(document).ready(function () {
         localStorage.setItem('calendarEvents', JSON.stringify(currentEvents));
     }
 
+    // format to show calender in main page
     $('#calendar').fullCalendar({
         header: {
             left: 'prev,next today',
@@ -49,6 +51,7 @@ $(document).ready(function () {
         selectable: true,
         events: loadEventsFromLocalStorage(),
 
+        //when selecting a 'date' in the month page, it navigates to the 'day' page
         dayClick: function (date, jsEvent, view) {
             if (view.name == 'month') {
                 $('#calendar').fullCalendar('changeView', 'agendaDay');
@@ -60,6 +63,7 @@ $(document).ready(function () {
             }
         },
 
+        //drag to SELECT slots
         select: function (start, end) {
             selectedSlot = { start: start, end: end };
 
@@ -116,12 +120,13 @@ $(document).ready(function () {
                 var description = $('#descriptionInput').val();
                 var color = $('#colorPicker').val() || '#000000';
 
+                // to check if descriptions is filled for the event
                 if (description.trim() !== '') {
                     selectedEvent.title = description;
                     selectedEvent.color = color;
 
                     $('#calendar').fullCalendar('updateEvent', selectedEvent);
-                    saveEventsToLocalStorage(); // Save to Local Storage
+                    saveEventsToLocalStorage(); // saves to local storage
                     overlay.hide();
                     popupModel.hide();
                 } else {

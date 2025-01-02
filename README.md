@@ -29,7 +29,7 @@ One-stop portal to keep track of your daily schedule and expenses when travellin
 * Time slots can be changed by adjusting the `Resize Grabber` found at the bottom of the event block
 
 ### `Track Your Expenses` :
-* Key in `Date` `Descriptions` `$ Amount` to enter an entry
+* Key in `Date`  `Descriptions`  `$ Amount` to enter a valid entry
   * Categories included are `FOOD` `TRANSPORT` `SHOPPING` `MISCELLANEOUS` `OTHERS`
 * List will show the most recent 3 entries (Most recent at the top of the list)
 * Click `See More` to view all entries

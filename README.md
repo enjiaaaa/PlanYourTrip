@@ -7,7 +7,7 @@ One-stop portal to keep track of your daily schedule and expenses when travellin
 
 ## Usage Instructions
 1. Clone the repository: 
-```bash
+```
         git clone https://github.com/enjiaaaa/PlanYourTrip
         cd PlanYourTrip
 ```
@@ -15,10 +15,10 @@ One-stop portal to keep track of your daily schedule and expenses when travellin
 2. Open the project.
 3. Open the `index.html` File
 4. Start Live Server
-``` 
+ 
 Right-click anywhere inside the `index.html` file.
 Select `Open with Live Server` from the context menu.
-```
+
 
 
 

@@ -57,7 +57,7 @@ $(document).ready(function () {
             overallTotal += entries.reduce((sum, entry) => sum + entry.amount, 0);
         });
 
-        $('#overall-total').text(`Overall Total: $${overallTotal.toFixed(2)}`);
+        $('#overall-total').text(`OVERALL SPENDING: $${overallTotal.toFixed(2)}`);
     }
 
     // to delete an entry in the list

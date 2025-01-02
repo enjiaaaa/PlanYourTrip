@@ -7,5 +7,7 @@ One-stop portal to keep track of your daily schedule and expenses when travellin
 
 ## Usage Instructions
 1. Clone the repo by 
-``` git clone https://github.com/enjiaaaa/PlanYourTrip
-cd PlanYourTrip ```
+```bash
+ git clone https://github.com/enjiaaaa/PlanYourTrip
+cd PlanYourTrip
+```

@@ -1,4 +1,4 @@
-![Screenshot 2025-01-02 at 4 04 11 PM](https://github.com/user-attachments/assets/58cdaa10-01b6-4a50-a77e-c0d023aef7b7)# 📍 Plan Your Trip 🛫🧳🌇
+📍 Plan Your Trip 🛫🧳🌇
 One-stop portal to keep track of your daily schedule and expenses when travelling!
 
 ## Features

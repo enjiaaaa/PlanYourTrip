@@ -9,89 +9,94 @@
     <link rel="stylesheet" href="../css/style-finance.css">
 </head>
 
+<header>
+    <h1>Record Your Expenses</h1>
+</header>
+
 <body>
-    <header>
-        <h1>Record Your Expenses</h1>
-        <p>Simply track your expenses selecting the respective categories and key in amount!</p>
-    </header>
-
-    <div class="finance-tracker">
-        <!-- Cat 1 = Food-->
-        <div class="categories" id="food">
-            <h2> FOOD </h2>
-            <div class="inputs">
-                <input type="date" id="date-food">
-                <input type="text" id="description-food" placeholder="Enter descriptions...">
-                <input type="number" id="amount-food" placeholder="Enter amount $...">
-                <button class="save-btn" onclick="saveEntry('food')">Save</button>
+    <p>Simply track your expenses by keying in description and amount in the respective categories!</p>
+    <section id="Menu"> <br>
+        <a href="../html/index.html" class="feature-button">Home Page</a><br>
+        <a href="../html/itinerary.html" class="feature-button">Plan Your Itinerary</a>
+    </section>
+    <section id="finance">
+        <div class="finance-tracker">
+            <!-- Cat 1 = Food-->
+            <div class="categories" id="food">
+                <h2> FOOD </h2>
+                <div class="inputs">
+                    <input type="date" id="date-food">
+                    <input type="text" id="description-food" placeholder="Enter descriptions...">
+                    <input type="number" id="amount-food" placeholder="Enter amount $...">
+                    <button class="save-btn" onclick="saveEntry('food')">Save</button>
+                </div>
+                <ul class="entry-list" id="list-food"></ul>
+                <button class="see-more-btn" onclick="seeMore('food')">See More</button>
+                <p id="total-food">Total: $0.00</p>
             </div>
-            <ul class="entry-list" id="list-food"></ul>
-            <button class="see-more-btn" onclick="seeMore('food')">See More</button>
-            <p id="total-food">Total: $0.00</p>
-        </div>
 
-        <!-- Cat 2 = Transport-->
-        <div class="categories" id="transport">
-            <h2> TRANSPORT </h2>
-            <div class="inputs">
-                <input type="date" id="date-transport">
-                <input type="text" id="description-transport" placeholder="Enter descriptions...">
-                <input type="number" id="amount-transport" placeholder="Enter amount $...">
-                <button class="save-btn" onclick="saveEntry('transport')">Save</button>
+            <!-- Cat 2 = Transport-->
+            <div class="categories" id="transport">
+                <h2> TRANSPORT </h2>
+                <div class="inputs">
+                    <input type="date" id="date-transport">
+                    <input type="text" id="description-transport" placeholder="Enter descriptions...">
+                    <input type="number" id="amount-transport" placeholder="Enter amount $...">
+                    <button class="save-btn" onclick="saveEntry('transport')">Save</button>
+                </div>
+                <ul class="entry-list" id="list-transport"></ul>
+                <button class="see-more-btn" onclick="seeMore('transport')">See More</button>
+                <p id="total-transport">Total: $0.00</p>
             </div>
-            <ul class="entry-list" id="list-transport"></ul>
-            <button class="see-more-btn" onclick="seeMore('transport')">See More</button>
-            <p id="total-transport">Total: $0.00</p>
-        </div>
 
-        <!-- Cat 3 = Shopping-->
-        <div class="categories" id="shopping">
-            <h2> SHOPPING </h2>
-            <div class="inputs">
-                <input type="date" id="date-shopping">
-                <input type="text" id="description-shopping" placeholder="Enter descriptions...">
-                <input type="number" id="amount-shopping" placeholder="Enter amount $...">
-                <button class="save-btn" onclick="saveEntry('shopping')">Save</button>
+            <!-- Cat 3 = Shopping-->
+            <div class="categories" id="shopping">
+                <h2> SHOPPING </h2>
+                <div class="inputs">
+                    <input type="date" id="date-shopping">
+                    <input type="text" id="description-shopping" placeholder="Enter descriptions...">
+                    <input type="number" id="amount-shopping" placeholder="Enter amount $...">
+                    <button class="save-btn" onclick="saveEntry('shopping')">Save</button>
+                </div>
+                <ul class="entry-list" id="list-shopping"></ul>
+                <button class="see-more-btn" onclick="seeMore('shopping')">See More</button>
+                <p id="total-shopping">Total: $0.00</p>
             </div>
-            <ul class="entry-list" id="list-shopping"></ul>
-            <button class="see-more-btn" onclick="seeMore('shopping')">See More</button>
-            <p id="total-shopping">Total: $0.00</p>
-        </div>
 
-        <!-- Cat 4 = Miscellaneous-->
-        <div class="categories" id="miscellaneous">
-            <h2> MISCELLANEOUS </h2>
-            <div class="inputs">
-                <input type="date" id="date-miscellaneous">
-                <input type="text" id="description-miscellaneous" placeholder="Enter descriptions...">
-                <input type="number" id="amount-miscellaneous" placeholder="Enter amount $...">
-                <button class="save-btn" onclick="saveEntry('miscellaneous')">Save</button>
+            <!-- Cat 4 = Miscellaneous-->
+            <div class="categories" id="miscellaneous">
+                <h2> MISCELLANEOUS </h2>
+                <div class="inputs">
+                    <input type="date" id="date-miscellaneous">
+                    <input type="text" id="description-miscellaneous" placeholder="Enter descriptions...">
+                    <input type="number" id="amount-miscellaneous" placeholder="Enter amount $...">
+                    <button class="save-btn" onclick="saveEntry('miscellaneous')">Save</button>
+                </div>
+                <ul class="entry-list" id="list-miscellaneous"></ul>
+                <button class="see-more-btn" onclick="seeMore('miscellaneous')">See More</button>
+                <p id="total-miscellaneous">Total: $0.00</p>
             </div>
-            <ul class="entry-list" id="list-miscellaneous"></ul>
-            <button class="see-more-btn" onclick="seeMore('miscellaneous')">See More</button>
-            <p id="total-miscellaneous">Total: $0.00</p>
-        </div>
 
-        <!-- Cat 5 = Others-->
-        <div class="categories" id="others">
-            <h2> OTHERS </h2>
-            <div class="inputs">
-                <input type="date" id="date-others">
-                <input type="text" id="description-others" placeholder="Enter descriptions...">
-                <input type="number" id="amount-others" placeholder="Enter amount $...">
-                <button class="save-btn" onclick="saveEntry('others')">Save</button>
+            <!-- Cat 5 = Others-->
+            <div class="categories" id="others">
+                <h2> OTHERS </h2>
+                <div class="inputs">
+                    <input type="date" id="date-others">
+                    <input type="text" id="description-others" placeholder="Enter descriptions...">
+                    <input type="number" id="amount-others" placeholder="Enter amount $...">
+                    <button class="save-btn" onclick="saveEntry('others')">Save</button>
+                </div>
+                <ul class="entry-list" id="list-others"></ul>
+                <button class="see-more-btn" onclick="seeMore('others')">See More</button>
+                <p id="total-others">Total: $0.00</p>
             </div>
-            <ul class="entry-list" id="list-others"></ul>
-            <button class="see-more-btn" onclick="seeMore('others')">See More</button>
-            <p id="total-others">Total: $0.00</p>
+
+            <div class="overall-total">
+                <h2 id="overall-total">OVERALL TOTAL: $0.00</h2>
+            </div>
+
         </div>
-
-        <div class="overall-total">
-            <h2 id="overall-total">OVERALL TOTAL: $0.00</h2>
-        </div>
-
-    </div>
-
+    </section>
     <script src="../javascript/finance.js"></script>
 
     <footer>

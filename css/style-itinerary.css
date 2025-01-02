@@ -13,6 +13,15 @@ p {
     font-size: larger;
 }
 
+#Menu {
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+    color: white;
+    max-width: 150px;
+    padding-bottom: 20px;
+}
+
 footer {
     z-index: 2;
     margin-top: 5%;

@@ -1,4 +1,4 @@
-📍 Plan Your Trip 🛫🧳🌇
+# 📍 Plan Your Trip 🛫🧳🌇
 One-stop portal to keep track of your daily schedule and expenses when travelling!
 
 ## Features
